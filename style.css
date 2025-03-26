@@ -1,0 +1,111 @@
+/* Genel sayfa yapısı */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sayfanın ana içeriği */
+main {
+    flex: 1;
+}
+
+/* Footer sabit alta oturur */
+footer {
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 100px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    height: 100px;
+    transition: opacity 0.5s ease;
+}
+
+.logo:hover {
+    opacity: 0.6;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .info-button {
+    background-color: black;
+    color: blue;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.header-right .info-button:hover {
+    background-color: #2563eb;
+}
+
+/* Tüm folium haritalarını etkiler */
+.folium-map {
+    margin: 0 20px;
+    /* sağ ve sol 20px boşluk */
+    padding: 10px 0;
+    /* üst-alt boşluk */
+}
+
+/* Sadece bu özel id'ye sahipsen daha hassas davranmak istersen: */
+#map_76540b0b7893d8749877c9b7461650dc {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Bilgi sayfasına özel içerik */
+main.info-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1f2937;
+    color: white;
+    border-radius: 8px;
+    text-align: left;
+}
+
+main.info-page h1,
+main.info-page h2 {
+    color: #3b82f6;
+}
+
+main.info-page a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+main.info-page a:hover {
+    text-decoration: underline;
+}
