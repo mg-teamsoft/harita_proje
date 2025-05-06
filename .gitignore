@@ -1,0 +1,28 @@
+# Ignore Python cache and virtualenvs
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+
+# Ignore Jupyter notebooks checkpoints (if any)
+.ipynb_checkpoints/
+
+# Ignore data & shapefile support files (optional — comment out if needed)
+# data/
+# *.shp
+# *.dbf
+# *.shx
+# *.prj
+# *.cpg
+
+# Ignore images (✅ your request)
+images/
+
+# Ignore map HTML outputs
+*.html
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
